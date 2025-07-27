@@ -61,9 +61,9 @@ export class UsersController {
 
     // GET: ~/api/users
     @Get()
-    @Roles(UserType.ADMIN)
-    @UseGuards(AuthRolesGuard)
-    @ApiSecurity('bearer')
+    // @Roles(UserType.ADMIN)
+    // @UseGuards(AuthRolesGuard)
+    // @ApiSecurity('bearer')
     public getAllUsers() {
         return this.usersService.getAll();
     }
